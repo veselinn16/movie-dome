@@ -1,0 +1,24 @@
+.search {
+  width: 100%;
+  background: #ffc300;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    border: none;
+    padding: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  &__button {
+    background: #fff;
+    border: none;
+    padding: 1rem;
+    border-left: 1px solid grey;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
