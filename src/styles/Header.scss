@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  background: teal;
+  text-align: center;
+  padding: 2rem;
+
+  &__heading {
+    font-weight: 100;
+    color: #fff;
+    font-family: 'Bungee Outline', cursive;
+    font-size: 3rem;
+  }
+}
