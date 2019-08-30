@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Search = props => {
-  const [input, setInput] = useState('');
-  useEffect(() => console.log(input));
+const Search = ({ input, setInput, search }) => {
   return (
     <div className="search">
       <input
@@ -12,7 +10,9 @@ const Search = props => {
         value={input}
         onChange={e => setInput(e.target.value)}
       />
-      <button className="search__button">Go</button>
+      <button className="search__button" onClick={() => search(input)}>
+        Go
+      </button>
     </div>
   );
 };
