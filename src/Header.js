@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = props => (
   <div className="header">
-    <p>Header</p>
+    <h1 className="header__heading">Movie Dome</h1>
   </div>
 );
 

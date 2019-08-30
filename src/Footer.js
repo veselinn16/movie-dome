@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = props => (
   <div className="footer">
-    <p>Footer</p>
+    <h2>&copy; 2019</h2>
   </div>
 );
 
