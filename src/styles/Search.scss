@@ -1,6 +1,6 @@
 .search {
   width: 100%;
-  background: #ffc300;
+  background: $searchBackground;
   display: flex;
   padding: 2rem;
   justify-content: center;
@@ -8,13 +8,14 @@
 
   &__input {
     border: none;
+    background: $searchInput;
     padding: 1rem;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
   }
 
   &__button {
-    background: #fff;
+    background: $searchBtn;
     border: none;
     padding: 1rem;
     border-left: 1px solid grey;

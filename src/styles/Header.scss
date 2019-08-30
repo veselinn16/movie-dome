@@ -1,13 +1,16 @@
 .header {
   width: 100%;
-  background: teal;
+  background: $headerBackground;
   text-align: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   padding: 2rem;
 
   &__heading {
     font-weight: 100;
     color: #fff;
-    font-family: 'Bungee Outline', cursive;
-    font-size: 3rem;
+    font-family: $defaultFont;
+    font-size: 3.5rem;
   }
 }
