@@ -1,15 +1,20 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const Movie = ({ movie }) => {
-  useEffect(() => console.log(movie));
+  //   useEffect(() => console.log(movie));
   return (
     <div className="movie">
-      <img
-        src={movie.Poster ? movie.Poster : '#'}
-        alt={`${movie.Title}'s poster`}
-      />
-      <h2 className="movie__title">{movie.Title}</h2>
-      <h4 className="movie__year">{movie.Year}</h4>
+      <div className="movie__poster__container">
+        <img
+          className="movie__poster"
+          src={movie.Poster ? movie.Poster : '#'}
+          alt={`${movie.Title}'s poster`}
+        />
+      </div>
+      <div className="movie__data">
+        <h2 className="movie__data--title">{movie.Title}</h2>
+        <h4 className="movie__data--year">{movie.Year}</h4>
+      </div>
     </div>
   );
 };
