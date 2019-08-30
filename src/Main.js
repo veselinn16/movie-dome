@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Movie from './Movie';
 
 const Main = ({ movies }) => {
@@ -13,8 +13,8 @@ const Main = ({ movies }) => {
     <main className="main">
       <div className="main__display">
         {movies ? (
-          movies.map(movie => {
-            return <Movie movie={movie} />;
+          movies.map((movie, i) => {
+            return <Movie movie={movie} key={i} />;
           })
         ) : (
           <h2 className="main__message">Your movies will appear here...</h2>
