@@ -5,7 +5,13 @@
   padding: 3rem;
 
   &__display {
-    height: 80%;
+    // fix this
+    min-height: 80vh;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
   }
 
   &__message {
