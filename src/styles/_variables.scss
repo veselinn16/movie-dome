@@ -9,7 +9,22 @@ $searchInput: #b6a6b5;
 $searchBtn: #fff;
 
 /// Main
-$mainBackground: #2b1100;
+// $mainBackground: #2b1100;
+// $mainColor1: #fdf0c4;
+// $mainColor2: #f7a992;
+$mainColor1: #f2d8b3;
+$mainColor2: #fdb266;
+$mainBackground: linear-gradient(
+  90deg,
+  $mainColor1 0%,
+  $mainColor1 25%,
+  $mainColor2 25%,
+  $mainColor2 50%,
+  $mainColor1 50%,
+  $mainColor1 75%,
+  $mainColor2 75%,
+  $mainColor2 100%
+);
 
 /// Footer
 $footerBackground: #593c29;
