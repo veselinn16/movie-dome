@@ -4,15 +4,14 @@ import Header from './Header';
 import Search from './Search';
 import Main from './Main';
 
+import baseURL from './utils/constants';
+
 const App = () => {
   const [movies, setMovies] = useState(null);
   const [input, setInput] = useState('');
 
   const search = async query => {
-    const APIKEY = 'cd7e3b';
-    const baseURL = `http://www.omdbapi.com/?apikey=${APIKEY}&s=${query}`;
-
-    const res = await fetch(baseURL);
+    const res = await fetch(baseURL + `s=${query}`);
     const data = await res.json();
 
     setMovies(data.Search);
